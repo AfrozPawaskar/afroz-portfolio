@@ -1,0 +1,21 @@
+.nav-items {
+    justify-content: right;
+    gap: 35px;
+}
+
+.resume {
+    background-color: var(--primary-text-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.resume:hover {
+    background-color: var(--accent-color);
+}
+
+.active-link {
+    color: var(--accent-color);
+    text-decoration:line-through;
+}

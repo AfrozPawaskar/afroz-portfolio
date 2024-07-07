@@ -1,0 +1,25 @@
+<div class="qualification-tab card">
+  <h3>{{title}}</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Exam</th>
+        <th>Year of Passing</th>
+        <th>Board/University</th>
+        <th>Grades Obtained</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let e of education">
+        <!-- Piping -->
+        <td>{{e.Exams}}</td>
+        <td>{{e.PassingYear}}</td>
+        <td>{{e.University}}</td>
+        <td>{{e.Grades}}%</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

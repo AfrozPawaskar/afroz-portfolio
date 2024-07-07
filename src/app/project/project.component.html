@@ -1,0 +1,10 @@
+<div class="cards-container flex">
+
+    <div *ngFor="let pro of projects" class="project-card card flex">
+        <h2>Cat.: {{pro.categ  | titlecase}}</h2>
+        <h2>{{pro.name | titlecase }}</h2>
+        <p>{{pro.desc}}</p>
+        <a [href]="pro.link" target="_blank" class="btn">See More on GitHub</a>
+    </div>
+
+</div>

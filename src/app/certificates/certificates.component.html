@@ -1,0 +1,14 @@
+  <div class="cards-container flex">
+    <div *ngFor="let c of certificates" class="project-card card flex">
+      <div class="img-tab">
+        
+        <img [src]="c.image" [alt]="c.name" class="certificate-image">
+      </div>
+      <h2>{{c.name | uppercase }}</h2>
+      <p>By {{c.source}}</p>
+      <p>Date of Achievement {{ c.date | date:'dd MMMM yyyy' }}</p>
+
+      <!-- <a [href]="c.link" target="_blank" class="btn">View Certificate</a> -->
+    </div>
+  </div>
+  

@@ -1,0 +1,46 @@
+
+<form class="card" [formGroup] ="contactForm" (ngSubmit)="queryFormSubmit()" id="queryForm">
+    <label for="name">Name <p class="required" *ngIf="control.userName && control.userName.invalid && control.userName.touched"> 
+        {{ control.userName.hasError('required') ? 'Name is required!' : '' }}
+        {{ control.userName.hasError('pattern') ? 'Invalid name.' : '' }}
+    </p>
+</label>
+    <input type="text" 
+    placeholder="Enter Name" 
+    name="userName" 
+    formControlName="userName">
+
+    <label for="email">Email <p class="required" *ngIf="control.userEmail && control.userEmail.invalid && control.userEmail.touched"> 
+        {{control.userEmail.hasError('required') ? 'Email is required!' : '' }}
+    </p></label>
+    <input type="email" 
+    placeholder="Enter Email" 
+    name="userEmail" 
+    formControlName="userEmail">
+
+    
+
+    <label for="mob">Mobile <p class="required" *ngIf="control.userMobile && control.userMobile.invalid && control.userMobile.touched"> 
+        {{ control.userMobile.hasError('required') ? 'Mobile number is required!' : '' }}
+        <!-- {{ control.userMobile.hasError('minlength') ? 'Enter valid number!' : '' }} -->
+        {{ control.userMobile.hasError('pattern') ? 'Invalid mobile number!' : '' }}
+    </p></label>  
+    <input type="tel" 
+    placeholder="Enter Mobile Number" 
+    name="userMobile" 
+    formControlName="userMobile">
+    
+
+    <label for="query">Your Message <p class="required" *ngIf="control.userQuery && control.userQuery.invalid && control.userQuery.touched"> 
+        {{control.userQuery.hasError('required') ? 'Message is required!' : '' }}
+    </p></label>
+    <textarea 
+    name="userQuery" 
+    formControlName="userQuery" 
+    id="query-msg" 
+    cols="30" rows="10" placeholder="Enter your message"></textarea>
+    
+
+    <button  [disabled]="contactForm.invalid"  type="submit">Submit</button>
+   
+</form>

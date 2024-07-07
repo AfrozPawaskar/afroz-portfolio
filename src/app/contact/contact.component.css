@@ -1,0 +1,51 @@
+label {
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+}
+
+.required {
+  color: red;
+  margin-bottom: 3px;
+  font-size: 12.5px;
+
+}
+
+input,
+textarea {
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus,
+input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+
+
+button {
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-text-color);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

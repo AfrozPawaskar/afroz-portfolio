@@ -1,0 +1,57 @@
+aside {
+    width: fit-content;
+    /* margin: var(--margin);  */
+    /* margin-top: 1px; */
+}
+
+.profile-sidebar {
+    width: fit-content;
+    background-color: #ffffff;
+    /* padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow); */
+}
+
+.profile-sidebar figure {
+    margin-right: 20px;
+}
+
+.profile-sidebar figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    line-height: 1rem;
+    margin-bottom: 20px;
+}
+
+.name p {
+    color: var(--primary-text-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.contact-info {
+    color: var(--primary-text-color);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.social-icons {
+
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+}
