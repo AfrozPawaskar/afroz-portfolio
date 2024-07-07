@@ -1,3 +1,10 @@
+This repository hosts my personal portfolio website built with Angular.
+
+## Live Preview
+
+Click [here](https://afrozpawaskar.github.io/afroz-portfolio/) to view the live preview of the project.
+
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
